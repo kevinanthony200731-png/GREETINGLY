@@ -60,4 +60,14 @@ Kevin Anthony
 
 ---
 
-⭐ If you like this project, consider giving the repository a star!
+
+## 📸 Project Screenshots
+
+### 1. Homepage
+![GREETINGLY Homepage](screenshots/Homepage.png)
+
+### 2. Customization
+![Greeting Customization](screenshots/Customization.png)
+
+### 3. Generated Greeting Card
+![Generated Greeting Card](screenshots/Preview.png)
