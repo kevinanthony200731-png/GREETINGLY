@@ -1,0 +1,212 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fff7f0, #f2edff);
+    color: #292044;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 25px 15px;
+    background: white;
+    box-shadow: 0 2px 12px #0000000d;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #7041d8;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #716783;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro h1 {
+    font-size: clamp(26px, 4vw, 38px);
+    margin-bottom: 12px;
+}
+
+.intro p {
+    color: #716783;
+    line-height: 1.6;
+}
+
+.generator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.form-panel,
+.preview-panel {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px #49307512;
+}
+
+.form-panel h2,
+.preview-panel h2 {
+    margin-bottom: 22px;
+    font-size: 22px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 16px 0 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ded6ed;
+    border-radius: 9px;
+    background: white;
+    color: #292044;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #a88af2;
+    border-color: transparent;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 22px;
+    background: #7041d8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #542bb5;
+    transform: translateY(-2px);
+}
+
+.greeting-card {
+    min-height: 340px;
+    padding: 30px 20px;
+    border: 3px solid #e6d8ff;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #fff2fa, #f0eaff);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.decoration {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.occasion-title {
+    color: #7041d8;
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#greetingCard h2 {
+    font-size: 30px;
+    color: #34205f;
+    margin-bottom: 18px;
+    overflow-wrap: anywhere;
+}
+
+#cardMessage {
+    line-height: 1.8;
+    max-width: 350px;
+    white-space: pre-line;
+}
+
+.card-footer {
+    margin-top: 30px;
+    color: #8b78a7;
+    font-size: 12px;
+}
+
+.download-btn {
+    background: #21865b;
+}
+
+.download-btn:hover {
+    background: #176a46;
+}
+
+.note {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #716783;
+    text-align: center;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    color: #716783;
+}
+
+@media (max-width: 750px) {
+    .generator {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 25px 14px;
+    }
+
+    .form-panel,
+    .preview-panel {
+        padding: 20px;
+    }
+}
+textarea {
+    width: 100%; padding: 12px; border: 1px solid #ded6ed; border-radius: 9px;
+    font: inherit; font-size: 15px; resize: vertical; color: #292044;
+}
+textarea:focus { outline: 2px solid #a88af2; border-color: transparent; }
+input[type="color"] { padding: 3px; height: 44px; cursor: pointer; }
+.ai-btn { background: linear-gradient(135deg, #7041d8, #d8419b); }
+.ai-btn:disabled { opacity: 0.6; cursor: wait; }
+.secondary { background: #ece5fb; color: #542bb5; }
+.secondary:hover { background: #ddd0f8; }
+#status { margin-top: 12px; font-size: 13px; color: #716783; min-height: 18px; line-height: 1.5; }
+.tpl-elegant { border-style: double; border-width: 6px; border-radius: 4px; }
+.tpl-playful { border-style: dashed; border-radius: 28px; }
+.tpl-playful .decoration { font-size: 46px; }

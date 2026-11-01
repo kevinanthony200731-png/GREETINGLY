@@ -1,0 +1,14 @@
+# Private API keys
+backend/.env
+.env
+
+# Python generated files
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Editor files
+.vscode/

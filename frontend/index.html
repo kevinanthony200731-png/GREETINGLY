@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREETINGLY - Greeting Card Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">💌 GREETINGLY</div>
+        <p>Personalized Greetings for Every Occasion</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Make Someone's Day Special ✨</h1>
+            <p>Create beautiful greetings for festivals, birthdays,
+               weddings and more.</p>
+        </section>
+
+        <section class="generator">
+            <div class="form-panel">
+                <h2>Create Your Greeting</h2>
+
+                <label for="occasion">Choose an occasion</label>
+                <select id="occasion">
+                    <option value="Birthday">🎂 Birthday</option>
+                    <option value="Diwali">🪔 Diwali</option>
+                    <option value="Eid">🌙 Eid</option>
+                    <option value="Christmas">🎄 Christmas</option>
+                    <option value="New Year">🎆 New Year</option>
+                    <option value="Wedding">💍 Wedding</option>
+                    <option value="Anniversary">❤️ Anniversary</option>
+                    <option value="Congratulations">🏆 Congratulations</option>
+                    <option value="Thank You">💐 Thank You</option>
+                    <option value="Formal">🤝 Formal Occasion</option>
+                </select>
+
+                <label for="recipient">Recipient's name</label>
+                <input type="text" id="recipient"
+                       placeholder="Enter a name, e.g. Aarav">
+
+                <label for="relationship">Relationship</label>
+                <select id="relationship">
+                    <option value="friend">Friend</option>
+                    <option value="family member">Family member</option>
+                    <option value="colleague">Colleague</option>
+                    <option value="partner">Partner</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="client">Client</option>
+                </select>
+
+                <label for="tone">Message style</label>
+                <select id="tone">
+                    <option value="warm">Warm and heartfelt</option>
+                    <option value="funny">Funny and playful</option>
+                    <option value="formal">Professional and formal</option>
+                    <option value="short">Short and simple</option>
+                </select>
+
+                <label for="sender">Your name (optional)</label>
+<input type="text" id="sender" placeholder="e.g. Priya">
+
+<label for="details">Personal touch for AI (optional)</label>
+<input type="text" id="details" placeholder="e.g. loves cricket, moving to Bengaluru">
+
+<label for="template">Card design</label>
+<select id="template">
+    <option value="classic">Classic</option>
+    <option value="elegant">Elegant</option>
+    <option value="playful">Playful</option>
+</select>
+
+<label for="font">Font</label>
+<select id="font">
+    <option value="serif">Serif (Georgia)</option>
+    <option value="modern">Modern (Segoe UI)</option>
+    <option value="script">Handwritten</option>
+    <option value="mono">Typewriter</option>
+</select>
+
+<label for="accent">Accent colour</label>
+<input type="color" id="accent" value="#7041d8">
+
+<label for="messageBox">Message (edit freely)</label>
+<textarea id="messageBox" rows="5"></textarea>
+
+<button id="aiBtn" class="ai-btn">🤖 Write with AI</button>
+<button id="generateBtn" class="secondary">✨ Use Template Message</button>
+<p id="status"></p>
+            </div>
+
+            <div class="preview-panel">
+                <h2>Your Greeting Card</h2>
+
+                <div class="greeting-card" id="greetingCard">
+                    <div class="decoration" id="decoration">🎉 ✨ 🎁</div>
+                    <p class="occasion-title" id="cardTitle">
+                        Happy Birthday!
+                    </p>
+                    <h2 id="cardName">Your Name Here</h2>
+                    <p id="cardMessage">
+                        Your personalized greeting will appear here.
+                    </p>
+                    <div class="card-footer">Made with ❤️ on GREETINGLY</div>
+                </div>
+
+                <button id="downloadBtn" class="download-btn">
+                    ⬇ Download Card as PNG
+                </button>
+
+                <p class="note">
+                    Create a card, preview it, and save it as an image.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ to spread happiness everywhere.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
