@@ -71,3 +71,6 @@ Kevin Anthony
 
 ### 3. Generated Greeting Card
 ![Generated Greeting Card](screenshots/Preview.png)
+## 🌐 Live Demo
+
+https://greetingly.onrender.com/
